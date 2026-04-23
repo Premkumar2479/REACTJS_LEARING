@@ -88,13 +88,18 @@
 // export default Hello
 
 
-function Hello(props){
+function Hello({name = "Guest", age="18", city="unknow",hobbies}){
+
     return (
         <div>
-            <h2>Hello, {props.name}</h2>
-            <h2>Hello, {props.age}</h2>
-            <h2>Hello, {props.city}</h2>
-
+            <h2>Hello : {name}</h2>
+            <h2>Age : {age}</h2>
+            <h2>City:  {city}</h2>
+        <ul>
+      {hobbies.map((hobby,index)=>(
+        <li key={index}>{hobby}</li>
+      ))}
+    </ul>
         </div>
     )
 
@@ -102,3 +107,4 @@ function Hello(props){
 
 
 export default Hello
+

@@ -1,5 +1,6 @@
 import Hello from "./Hello";
 import Bye from "./Bye";
+import Button from "./Button"
 
 // function App() {
 
@@ -16,9 +17,25 @@ import Bye from "./Bye";
 
 
 function App(){
+
+const hobbies = ["Reading", "codeing", "Travelling"]
+
+
+
+function Message(){
+  alert("Hello from Message Box")
+}
+
+function ByeMessage(){
+  alert("Hello from Message Bye")
+}
+
   return (
     <>
-    <Hello name = "yahubaba" age = {24} city = "patna" />
+    <Hello name = "yahubaba" age = {24} city = "patna" hobbies ={hobbies} />
+    <Button  label="Click Me" handleClick={Message}/>
+        <Button  label="just click" handleClick={ByeMessage}/>
+
 
     </>
   )
