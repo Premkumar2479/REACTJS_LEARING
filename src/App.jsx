@@ -35,7 +35,7 @@ function ByeMessage(){
     <Hello name = "yahubaba" age = {24} city = "patna" hobbies ={hobbies} />
     <Button  label="Click Me" handleClick={Message}/>
         <Button  label="just click" handleClick={ByeMessage}/>
-
+    <Bye />
 
     </>
   )
