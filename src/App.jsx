@@ -2,6 +2,7 @@ import Hello from "./Hello";
 import Bye from "./Bye";
 import Button from "./Button"
 import Counter from "./Counter"
+import ToggleText from "./ToogleText";
 
 // function App() {
 
@@ -37,6 +38,7 @@ function ByeMessage(){
     <Button  label="Click Me" handleClick={Message}/>
         <Button  label="just click" handleClick={ByeMessage}/>
     <Bye />
+    <ToggleText />
     <Counter />
     </>
   )
