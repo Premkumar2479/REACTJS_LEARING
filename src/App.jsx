@@ -3,6 +3,7 @@ import Bye from "./Bye";
 import Button from "./Button"
 import Counter from "./Counter"
 import ToggleText from "./ToogleText";
+import Hero from "./component/Hero"
 
 // function App() {
 
